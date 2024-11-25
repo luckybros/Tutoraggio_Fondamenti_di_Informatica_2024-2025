@@ -1,6 +1,6 @@
 /* Vogliamo coprire le tracce di un ricercato: dato un avviso di 
 cattura (una stringa) vogliamo andare a sostituire il nome con 
-dei trattini bassi (Esempio: Fate attenzione a Pippo -> fate 
+dei trattini bassi (Esempio: fate attenzione a Pippo\0 -> fate 
 attenzione a _____). Assumiamo che il nome del ricercato sia 
 l'unica parola che comincia con una maiuscola.
 */
@@ -18,12 +18,20 @@ void copriNome(char avviso[]) {
 
     for(int i = 0; i < lunghezza; i++) {
         if((avviso[i] >= 'A' && avviso[i] <= 'Z') && (i == 0 || avviso[i - 1] == ' ')) {
-
+            //inizioParola = i;
+            while(avviso[i] != ' ' && avviso[i] != '\0') {
+                avviso[i] = '_';
+                i++;
+            }
+            break;
         }
     }
+
+    /*if(inizioParola == -1) {
+        printf("Nessun nome da censurare");
+        return;
+    }*/
 }
-
-
 
 int main() {
     char avviso[256];
@@ -31,6 +39,8 @@ int main() {
     printf("Inserisci avviso: ");
     scanf("%[^\n]s", avviso);
 
+    copriNome(avviso);
 
+    printf("%s", avviso);
 
 }
