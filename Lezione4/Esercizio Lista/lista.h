@@ -12,23 +12,33 @@ multipli di M. Se la lista è vuota, la funzione restituisce il valore -1. */
 
 #include <stdlib.h>
 #include <stdbool.h>
-#include <stdio.h>
 
 #define VUOTA -1
 
 #ifndef LISTA_H
 #define LISTA_H
 
+typedef enum funzioni
+{
+    esci=0,
+    aggiungi_valore_in_coda=1,
+    visualizza_lista,
+    cancella_valore,
+    somma_multipli
+}Funzioni;
+
 typedef struct nodo {
     int valore;
     struct nodo* prossimo;
 } Nodo;
 
+//typedef Nodo* Lista;
+
 Nodo* creaNodo(int nuovoValore);
-void aggiungiValoreInCoda(Nodo** testa, int valoreDaAggiungere);
-int visualizzaLista(Nodo* testa);
+bool aggiungiValoreInCoda(Nodo** testa, int valoreDaAggiungere);
+void visualizzaLista(Nodo* testa);
 bool cancellaValore(Nodo** testa, int valoreDaCancellare);
 void deallocaLista(Nodo** testa);
 int calcolaSommaMultipli(Nodo* testa, int M);
-
+void libera(Nodo* punt);
 #endif

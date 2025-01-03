@@ -38,7 +38,7 @@ typedef struct {
     char luogo[MAX_NOME];
 } Partita;
 
-void aggiungiPartita(Partita partite[], int* numeroPartite);
+void aggiungiPartita(Partita* partite, int* numeroPartite);
 bool cancellaPartita(Partita partite[], int* numeroPartite, int id);
 void getPartitaPerData(Partita partite[], int numeroPartite, char data[]);
 void calcolaPuntiPartite(Partita partite[], int numeroPartite, char squadra[], int* punti, int* partiteGiocate);
@@ -131,7 +131,7 @@ int main() {
     free(partite);
 }
 
-void aggiungiPartita(Partita partite[], int* numeroPartite) {
+void aggiungiPartita(Partita* partite, int* numeroPartite) {
     printf("Inserisci ID della partita: \n");
     scanf("%d", &partite[*numeroPartite].id);
 
