@@ -24,7 +24,7 @@ NOTA: si utilizzi la memoria Heap
 #include <stdbool.h>
 #include <time.h>
 
-#define MAX_NOME 51
+#define MAX_NOME 101
 #define MAX_DATA 11
 #define MAX_PARTITE 10
 
