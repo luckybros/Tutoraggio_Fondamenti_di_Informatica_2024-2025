@@ -1,0 +1,20 @@
+1 10.50 100 Penna a sfera
+2 5.30 200 Quaderno A4
+3 25.00 50 Calcolatrice scientifica
+4 1.20 500 Gomma da cancellare
+5 50.00 3 Zaino scuola
+6 3.00 150 Righello 30cm
+7 2.00 300 Matita HB
+8 12.00 80 Pennarelli colorati
+9 8.75 100 Set di evidenziatori
+10 15.00 60 Astuccio scuola
+11 7.50 90 Diario scolastico
+12 45.00 10 Cartella per documenti
+13 20.00 40 Colla stick
+14 4.50 500 Fermagli metallici
+15 6.20 150 Forbici da carta
+16 18.00 30 Squadretta 45 gradi
+17 9.99 75 Compasso professionale
+18 13.50 25 Tavolozza colori
+19 14.75 2 Set di tempere
+20 22.00 10 Zaino trekking
