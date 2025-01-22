@@ -1,13 +1,11 @@
-/*Esercizio 2 – Generazione del nome del file contente i voti (studenti.h/studenti.c)
-Il candidato realizzi una funzione:
-char * creaNomeFile(studente s);
-che, ricevuto in ingresso una struttura dati studente, generi il nome del file corrispondente che conterrà gli
-esami ed i voti di quel certo studente. Si ricorda che per ogni studente, il file corrispondente si chiamerà
-“NomeCognome.txt”, dove a Nome ed a Cognome si dovranno sostituire rispettivamente il nome ed il
-cognome dello studente.
-Contestualmente, il candidato scriva nel main opportune istruzioni per invocare le funzioni definite al fine di
-verificarne la corretta implementazione. Una volta verificato il corretto funzionamento delle funzioni, il
-candidato non cancelli il codice nel main ma si limiti a commentarlo*/
+/*Esercizio 5 – Main (main.c)
+Il candidato realizzi un programma main.c che provveda a leggere i nomi degli studenti nel file
+“listaStud.txt” e a memorizzarli tramite la funzione di cui al punto 1. Quindi il programma allochi spazio
+sufficiente per memorizzare un array di strutture dati riepilogoEsame (inizialmente vuoto), e tramite la
+funzione di cui al punto 4 legga, per ogni studente memorizzato nel file “listaStud.txt”, gli esami ed i voti
+ricevuti, ed aggiorni l’array di riepilogo. Infine il main stampi a video l’elenco degli esami con codice
+dell’esame, numero di studenti che l’hanno sostenuto e medie.
+Il candidato abbia cura di deallocare (al termine del programma) tutte le strutture allocate dinamicamente.*/
 
 #include <stdio.h>
 #include <stdbool.h>
@@ -18,6 +16,7 @@ candidato non cancelli il codice nel main ma si limiti a commentarlo*/
 #define STUDENTI_H
 
 #define MAX_NOME 64
+#define NUMERO_ESAMI 29
 
 typedef struct {
     char nome[MAX_NOME];
@@ -25,8 +24,16 @@ typedef struct {
     int matricola;
 } Studente;
 
+typedef struct {
+    char codice[MAX_NOME];
+    int numStudenti;
+    int somma;
+} RiepilogoEsame;
+
 Studente leggiUnoStudente(FILE* file);
 Studente* leggiTuttiGliStudenti(char* nomeFile, int* dim);
-char* creaNomeFile(Studente studente);
+void creaNomeFile(Studente studente);
+int trovaPos(RiepilogoEsame* esami, int dim, char* codice);
+void aggiornaEsamiSostenuti(char* nomeFile, RiepilogoEsame* esami, int* dim);
 
 #endif

@@ -1,10 +1,5 @@
-Mario Rossi 1001
-Luigi Verdi 1002
-Anna Bianchi 1003
-Giulia Neri 1004
-Francesco Russo 1005
-Elena Ferrari 1006
-Marco Conti 1007
-Valentina Moretti 1008
-Federico Galli 1009
-Chiara Costa 1010
+Andrea Noto 1000
+Luigi Panariello 1001
+Luca Scolletta 1002
+Gabriele Saurini 1003
+
