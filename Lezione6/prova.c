@@ -215,6 +215,7 @@ int main(){
         }
     } while(scelta != 0);
     
-    
+    free(prodotti);
+
     return 0;
 }
