@@ -121,5 +121,3 @@ void aggiornaEsamiSostenuti(char* nomeFile, RiepilogoEsame* esami, int* dim) {
 
     fclose(file);
 }
-
-

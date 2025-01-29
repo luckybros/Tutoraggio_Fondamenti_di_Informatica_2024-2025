@@ -1,0 +1,4 @@
+1 Chesani Federico 5 30 28 26 30 19
+2 Giannnelli Carlo 8 30 30 30 30 30 30 30 30
+1 Chesani Federico 6 30 28 26 30 19 29
+1 Chesani Federico 7 30 28 26 30 19 29 30

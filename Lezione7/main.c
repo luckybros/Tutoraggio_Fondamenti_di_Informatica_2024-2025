@@ -12,7 +12,7 @@ int main() {
     int numeroEsami = 0;
     RiepilogoEsame esami[NUMERO_ESAMI];
 
-    for(int i = 0; i < dim; i++){
+    for(int i = 0; i < dim; i++) {
         char* nomeFile = malloc(strlen("fileStudenti/") + strlen(studenti[i].nome) + strlen(studenti[i].cognome) + 5);
         strcat(nomeFile, "fileStudenti/");
         strcat(nomeFile, studenti[i].nome);
