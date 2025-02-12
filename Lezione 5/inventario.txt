@@ -1,0 +1,5 @@
+101 15.5 8 Penna_a_sfera
+102 8.2 50 Quaderno_A4
+103 25.0 5 Calcolatrice_scientifica
+104 3.5 30 Gomma_per_cancellare
+105 12.1 9 Righello_in_metallo
