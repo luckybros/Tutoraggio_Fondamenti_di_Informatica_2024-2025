@@ -5,5 +5,7 @@
         "lista.h": "c",
         "stdbool.h": "c"
     },
-    "C_Cpp.dimInactiveRegions": false
+    "C_Cpp.dimInactiveRegions": false,
+    "C_Cpp.errorSquiggles": "enabled",  // Abilita la segnalazione degli errori nel codice
+    "C_Cpp.intelliSenseEngine": "default", // Usa l'analisi predefinita di IntelliSense
 }

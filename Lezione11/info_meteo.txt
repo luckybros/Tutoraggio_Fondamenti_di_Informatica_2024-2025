@@ -1,0 +1,6 @@
+0 999.9 999 Città del Capo
+1 32.8 999 Madrid
+1 34.5 999 Sydney
+2 999.9 40 Londra
+3 29.7 50 Cagliari
+3 18.7 80 New York
